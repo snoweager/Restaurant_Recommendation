@@ -1,0 +1,104 @@
+Restaurant Recommendation System
+
+This project is a Content-Based Restaurant Recommender System that suggests restaurants based on the similarity of cuisine type, price range, and overall ratings. It uses the TF-IDF vectorizer and cosine similarity to find similar restaurants and displays the results using an interactive Streamlit web interface.
+
+---
+
+ Features
+
+- Recommends similar restaurants based on a selected one.
+- Content-based filtering using restaurant metadata (cuisine, price, rating).
+- Clean and interactive web app powered by Streamlit.
+- Built with real-world restaurant data from Kaggle.
+
+---
+
+Project Structure
+
+```
+
+Restaurant\_Recommendation/
+├── app.py                   # Streamlit app
+├── data/                    # Folder containing CSV datasets
+│   ├── rating\_final.csv
+│   ├── geoplaces2.csv
+│   ├── chefmozcuisine.csv
+├── README.md                # Project description
+
+````
+
+---
+
+Datasets Used
+
+From the [Kaggle Restaurant Recommendation Dataset](https://www.kaggle.com/datasets):
+
+- `rating_final.csv`: Final user ratings.
+- `geoplaces2.csv`: Restaurant metadata including name, city, price, etc.
+- `chefmozcuisine.csv`: Cuisine type for each restaurant.
+
+---
+
+Tech Stack
+
+- Python 
+- Pandas 
+- Scikit-learn 
+- Streamlit 
+
+---
+
+How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/restaurant-recommender.git
+cd restaurant-recommender
+````
+
+2. Install required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Ensure your folder contains the following:
+
+```bash
+data/
+├── rating_final.csv
+├── geoplaces2.csv
+├── chefmozcuisine.csv
+```
+
+4. Run the app:
+
+```bash
+streamlit run app.py
+```
+
+5. Open your browser: to the URL shown (usually `http://localhost:8501`)
+
+---
+
+Example Usage
+
+1. Launch the app.
+2. Select a restaurant from the dropdown.
+3. Click "Recommend".
+4. View a list of similar restaurants with matching cuisine, rating, and price profile.
+
+---
+
+ License
+
+This project is for educational and demonstration purposes. Dataset rights belong to the original Kaggle contributors.
+
+---
+
+Acknowledgments
+
+Kaggle for the dataset
+Streamlit for an awesome visualization framework
+
